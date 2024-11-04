@@ -1,18 +1,11 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-# # Sample DataFrame
-# data = {
-#     'column1': [1, 2, 3],
-#     'column2': ['A', 'B', 'C']
-# }
-# df = pd.DataFrame(data)
-
-df = pd.read_csv('US_only.csv')
+df = pd.read_csv('Your_dataset.csv')
 
 # Define your connection parameters
-username = 'postgres'
-password = '8880323asdASD'
+username = 'postgres' #this is a typical name for server
+password = 'your password'
 host = 'localhost'  # or your host
 port = '5432'       # default port for PostgreSQL
 database = 'fake_job_posting'
